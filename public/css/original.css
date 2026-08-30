@@ -150,3 +150,31 @@ body {
     color: #ffffff;
     background-color: var(--samuraimart-primary);
 }
+
+/* レビューの評価（★）表示 */
+.review-score-color {
+    color: var(--samuraimart-primary);
+}
+
+.review-score-color:focus {
+    color: var(--samuraimart-primary);
+}
+
+/* 退会リンク・キャンセルボタン */
+.dashboard-delete-link {
+    border-radius: 2px;
+    border: solid 1px #ccc;
+    background-color: #ffffff;
+    color: #495057;
+}
+
+.dashboard-delete-link:hover {
+    background-color: #f1f1f1;
+}
+
+/* 退会確定ボタン */
+.samuraimart-delete-submit-button {
+    border-radius: 2px;
+    color: #ffffff;
+    background-color: #d94b0e;
+}
