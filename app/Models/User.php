@@ -41,4 +41,10 @@ class User extends Authenticatable implements MustVerifyEmail
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    // 1人のユーザーは複数の商品をお気に入り登録できる
+    public function favorite_products()
+    {
+        return $this->belongsToMany(Product::class)->withTimestamps();
+    }
 }

@@ -45,8 +45,13 @@ body {
 
 /* お気に入りボタン */
 .samuraimart-favorite-button {
-    background-color: #fff;
-    border: 1px solid #ccc;
+    border-radius: 2px;
+    border: solid 1px var(--samuraimart-primary);
+    background-color: #ffffff;
+}
+
+.text-favorite {
+    color: var(--samuraimart-primary);
 }
 
 .samuraimart-favorite-button:hover {
@@ -92,4 +97,49 @@ body {
 .samuraimart-login-text:hover {
     color: var(--samuraimart-navy);
     text-decoration: underline;
+}
+
+/* ヘッダー */
+.samuraimart-header-container {
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.samuraimart-header-container .navbar-brand img {
+    height: 32px;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+}
+
+.samuraimart-header-search-input {
+    border: solid 1px #e5e5e5;
+}
+
+.samuraimart-header-search-button {
+    background-color: var(--samuraimart-primary);
+}
+
+.samuraimart-header-search-icon {
+    color: #ffffff;
+}
+
+.samuraimart-header-fav-icon {
+    color: var(--samuraimart-navy);
+}
+
+.samuraimart-header-shoppingcart-icon {
+    color: var(--samuraimart-navy);
+}
+
+/* サイドバーのカテゴリーラベル */
+.samuraimart-sidebar-category-label {
+    width: 156px;
+    height: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #191919;
 }
