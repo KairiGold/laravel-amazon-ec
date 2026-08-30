@@ -26,7 +26,7 @@
                 @foreach($products as $product)
                 <div class="col-3">
                     <a href="{{route('products.show', $product)}}">
-                        <img src="{{ asset('img/dummy.png')}}" class="img-thumbnail">
+                        <img src="{{ asset('img/DSC_0149.JPG')}}" class="img-thumbnail">
                     </a>
                     <div class="row">
                         <div class="col-12">
