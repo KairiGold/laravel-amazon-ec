@@ -1,0 +1,95 @@
+/*
+ * SamuraiMart オリジナルスタイル
+ * Amazon風ECサイトのトーン（オレンジ×ネイビー）に合わせた独自クラス。
+ * ※教材本文の該当セクションが受信時に途切れていたため、
+ *   ビュー側で参照されているクラス名に対して独自に作成しています。
+ */
+
+:root {
+    --samuraimart-primary: #f0932b;
+    --samuraimart-primary-dark: #d3791a;
+    --samuraimart-navy: #232f3e;
+    --samuraimart-require: #d9534f;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+/* 商品一覧の商品名・価格ラベル */
+.samuraimart-product-label {
+    font-size: 0.95rem;
+    color: #212529;
+    line-height: 1.4;
+}
+
+.samuraimart-product-label label {
+    font-weight: bold;
+    color: #b12704;
+}
+
+/* 送信系ボタン（カートに追加・ログイン・登録など） */
+.samuraimart-submit-button {
+    background-color: var(--samuraimart-primary);
+    border-color: var(--samuraimart-primary-dark);
+    color: #fff;
+    font-weight: bold;
+}
+
+.samuraimart-submit-button:hover,
+.samuraimart-submit-button:focus {
+    background-color: var(--samuraimart-primary-dark);
+    border-color: var(--samuraimart-primary-dark);
+    color: #fff;
+}
+
+/* お気に入りボタン */
+.samuraimart-favorite-button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.samuraimart-favorite-button:hover {
+    background-color: #f1f1f1;
+}
+
+/* フォームの必須ラベル */
+.samuraimart-require-input-label {
+    display: inline-block;
+}
+
+.samuraimart-require-input-label-text {
+    background-color: var(--samuraimart-require);
+    color: #fff;
+    font-size: 0.7rem;
+    padding: 0.1rem 0.4rem;
+    border-radius: 0.25rem;
+    vertical-align: middle;
+}
+
+/* ログイン・会員登録フォームの入力欄 */
+.samuraimart-login-input {
+    border-radius: 0.375rem;
+}
+
+.samuraimart-login-input:focus {
+    border-color: var(--samuraimart-primary);
+    box-shadow: 0 0 0 0.2rem rgba(240, 147, 43, 0.25);
+}
+
+/* ログイン画面のチェックボックスラベル */
+.samuraimart-check-label {
+    font-size: 0.9rem;
+    color: #495057;
+}
+
+/* ログイン画面の補助リンク（パスワード再設定・新規登録など） */
+.samuraimart-login-text {
+    color: var(--samuraimart-primary-dark);
+    text-decoration: none;
+}
+
+.samuraimart-login-text:hover {
+    color: var(--samuraimart-navy);
+    text-decoration: underline;
+}
