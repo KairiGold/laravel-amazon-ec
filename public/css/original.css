@@ -178,3 +178,8 @@ body {
     color: #ffffff;
     background-color: #d94b0e;
 }
+
+/* 注文履歴一覧のテーブル */
+th, td {
+    background-color: #f8fafc !important;
+}
